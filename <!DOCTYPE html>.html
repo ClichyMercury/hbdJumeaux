@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Joyeux Anniversaire aux Jumeaux ! 🎉</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #2e3440;
+            color: #eceff4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+        header {
+            background-color: #4c566a;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid #d8dee9;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            background-color: #3b4252;
+            border: 2px solid #d8dee9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 800px;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .twins {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .twin {
+            background: #4c566a;
+            border: 2px solid #d8dee9;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .twin:hover {
+            transform: scale(1.05) rotate(5deg);
+            background: #5e81ac;
+        }
+        .twin h2 {
+            color: #d8dee9;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #d8dee9;
+            border-top: 2px solid #d8dee9;
+            padding-top: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎉 Joyeux Anniversaire aux Jumeaux ! 🎉</h1>
+    </header>
+    <div class="content">
+        <p>Nous célébrons aujourd'hui deux talents extraordinaires !</p>
+        <div class="twins">
+            <div class="twin">
+                <h2>🎉 Développeur 🎉</h2>
+                <p>Un esprit créatif qui construit le futur avec des lignes de code.</p>
+            </div>
+            <div class="twin">
+                <h2>🎨 Designer 🎨</h2>
+                <p>Un artiste qui donne vie à des idées avec des designs époustouflants.</p>
+            </div>
+        </div>
+        <p>Que cette journée soit remplie de bonheur, d'amour et de succès !</p>
+    </div>
+    <footer>
+        <p>Félicitations à vous deux ! Profitez de votre journée !</p>
+    </footer>
+
+    <script>
+        // Fonction pour faire apparaître la page avec un effet de fondu
+        window.onload = function() {
+            const content = document.querySelector('.content');
+            content.style.opacity = '1';
+            content.style.transform = 'translateY(0)';
+        };
+    </script>
+</body>
+</html>
